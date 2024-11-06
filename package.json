@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/index.ts",
-    "dev": "tsc-watch --onSuccess \"node ./build/index.js\"",
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
     "build": "tsc",
     "postinstall": "npm run build"
   },
@@ -37,14 +37,14 @@
   },
   "_moduleAliases": {
     "@src": "./src",
-    "@/resources": "./src/resources",
-    "@/utils": "./src/utils",
-    "@/middlewares": "./src/middlewares",
-    "@/routes": "./src/routes",
-    "@/services": "./src/services",
-    "@/errors": "./src/errors",
-    "@/events": "./src/events",
-    "@/interfaces": "./src/interfaces",
-    "@/response": "./src/response"
+    "@/resources": "./build/resources",
+    "@/utils": "./build/utils",
+    "@/middlewares": "./build/middlewares",
+    "@/routes": "./build/routes",
+    "@/services": "./build/services",
+    "@/errors": "./build/errors",
+    "@/events": "./build/events",
+    "@/interfaces": "./build/interfaces",
+    "@/response": "./build/response"
   }
 }
